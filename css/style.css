@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  height: 70px;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-input-form{
+  margin: 20px 0;
+  width: 400px;
+}
+.my-input-form *{
+  outline: none;  
+}
+
+.my-input-form input{
+  width: 74%;
+  height: 30px;
+  border-radius: 10px;
+  padding:15px 15px;
+}
+
+.btn{
+  height: 35px;
+  border-radius: 10px;
+  width: 25%;
+}
+
+.todo-list{
+  display: flex;
+  justify-content: center;
+  min-height: 100px;
+  width:500px;
+  border-radius: 10px;
+  background-color: lightgrey;
+  padding: 20px 0;
+}
+
+a{
+  color: black;
+}
+
+ul{
+  padding: 0;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+.list-item{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid grey;
+  padding: 10px;
+
+}
+
+.green{
+  background-color: green;
+}
