@@ -1,7 +1,8 @@
 /*
 Creare una web app con Vue che permetta ad un utente di:
-Inserire un elemento nella lista
-Rimuovere un elemento dalla lista
+- Inserire un elemento nella lista
+- Rimuovere un elemento dalla lista
+- Al click di un elemento presente nella lista, cambiare il colore dello sfondo di quell'elemento. Se l'utente clicca nuovamente sullo stesso elemento, riportare il colore a quello che avete scelto di default.
 */
 
 const myApp = new Vue({
