@@ -13,26 +13,25 @@
         <div class="row">
           <img src="img/logo.png" alt="Boolean logo">
           <div class="my-input-form">
+            <!-- collego il valore dell'input al campo userInput nell'istanza di Vue -->
             <input v-model="userInput" type="text" placeholder="Nuovo Todo">
+            <!-- assegno la funzione addToDo al click del bottone -->
             <button @click="addToDo" type="button" class="btn">Aggiungi</button>
           </div>
         </div>
         <div class="row">
           <div class="todo-list">
             <ul>
-              <template v-for="(el, index) in toDoes">
-                <li>
-                  <div class="list-item">
-                    <span>{{ el }}</span>
-                    <a href="#" @click="removeItem(index)"><i class="fa fa-times" aria-hidden="true"></i></a>
-                  </div>
-                </li>
-              </template>
+              <!-- Imposto un v-for per creare gli elementi necessari, al click assegno la funzione highlightItem  e tramite v-bind assegno la classe .active all'elemento necessario-->
+              <li @click="highlightItem(todoIndex)" class="list-item" :class="{active: toDos[todoIndex].active}" v-for="(todo, todoIndex) in toDos">
+                <span>{{ todo.text }}</span>
+                <!-- associo la funzione removeItem al click e uso il .stop per far si che al click dell'element si attivi solo quella funzione(evitare highlightItem) -->
+                <a href="#" @click.stop="removeItem(todoIndex)"><i class="fa fa-times" aria-hidden="true"></i></a>
+              </li>
             </ul>
           </div>
-
         </div>
-      </div>      
+      </div>
     </div>
     <script src="js/main.js" charset="utf-8"></script>
   </body>

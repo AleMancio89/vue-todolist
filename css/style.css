@@ -29,7 +29,7 @@ img{
   width: 400px;
 }
 .my-input-form *{
-  outline: none;  
+  outline: none;
 }
 
 .my-input-form input{
@@ -76,6 +76,8 @@ ul li{
 
 }
 
-.green{
-  background-color: green;
+.active{
+  /* background-color: red; */
+  background-color: #00E165;
+  border-radius: 10px;
 }
